@@ -28,7 +28,7 @@ const paragraphs = document.querySelectorAll("p");
 
 for (let i = 0; i < paragraphs.length; i++) {
 
-paragraphs[i].style.color = "red" 
+paragraphs[i].style.color = "red"; 
 
 }
 
@@ -66,11 +66,11 @@ allCats(cats);
 
 function createCats (cats) {
    
-    let html;
+    let html = "";
 
     for (let i = 0; i < cats.length; i++) {
 
-    const ageUnKnown = "Age unknown";
+    let ageUnKnown = "Age unknown";
 
     if (!cats[i].age) {
     cats[i].age = ageUnKnown; 
@@ -90,5 +90,7 @@ const catContainer = document.querySelector(".cat-container");
 const createdCats = createCats (cats);
 
 catContainer.innerHTML +=  createdCats;
+
+console.log (catContainer);
 
 
