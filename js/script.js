@@ -59,7 +59,7 @@ function allCats (list) {
         console.log (list[i].name);
     }
 };
-allCats(cats);
+allCats (cats);
 
 
 //question 8
