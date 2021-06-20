@@ -91,6 +91,6 @@ const createdCats = createCats (cats);
 
 catContainer.innerHTML +=  createdCats;
 
-console.log (catContainer);
+
 
 
